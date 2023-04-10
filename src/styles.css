@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+  background: #2c3e50;
+  color: white;
+}
+.App {
+  text-align: center;
+}
+
+div {
+  padding: 10px 0;
+}
+
+select {
+  padding: 5px;
+}
+
+/* Header */
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+/* alert */
+.msg-container {
+  text-align: center;
+}
+.success {
+  color: #55efc4;
+  font-size: 1rem;
+}
+
+.error {
+  color: #ff7675;
+  font-size: 1rem;
+}
+
+/* Input */
+.container {
+  width: 100%;
+  margin: auto;
+}
+
+.container input[type="text"] {
+  padding: 6px 4px;
+  width: 60%;
+  margin-right: 10px;
+  font-size: 1.3rem;
+  border: 0;
+  outline: 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  text-indent: 9px;
+  color: #747d8c;
+}
+
+.container button {
+  padding: 6px 4px;
+  width: 20%;
+  font-size: 1.3rem;
+  border: 0;
+  outline: 0;
+  border-radius: 4px;
+  background: #95a5a6;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  color: whitesmoke;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background: #7f8c8d;
+}
+/* List */
+
+.list {
+  margin-top: 1.4rem;
+  list-style: none;
+  text-align: left;
+  font-size: 1.2rem;
+  background: #34495e;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  overflow: auto;
+}
+.list div {
+  position: relative;
+}
+
+.list li {
+  padding: 2px 2.5rem;
+  user-select: none;
+  margin-right: 4.7rem;
+  text-align: justify;
+}
+
+.trash {
+  position: absolute;
+  top: 13px;
+  right: 30px;
+  cursor: pointer;
+}
+
+.trash:hover,
+.done:hover,
+.edit:hover {
+  /* font-size: 1.4rem; */
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+.done {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.edit {
+  position: absolute;
+  top: 13px;
+  right: 60px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.clear-list {
+  width: 6rem;
+  margin: 2rem auto;
+  color: #7f8c8d;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.clear-list:hover {
+  color: #95a5a6;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 2rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+@media only screen and (min-width: 768px) {
+  .container input[type="text"] {
+    width: 50%;
+    padding: 15px 9px;
+    margin-right: 10px;
+    font-size: 1.4rem;
+  }
+
+  .container button {
+    padding: 15px 9px;
+    width: 15%;
+    font-size: 1.4rem;
+  }
+
+  .list {
+    margin: 1.7rem auto;
+    width: 67%;
+  }
+  .footer {
+    font-size: 1.3rem;
+  }
+}
